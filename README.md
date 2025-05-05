@@ -1,4 +1,7 @@
-# CPP Turbomodules with Expo
+# React Native (Expo) Turbo Module for [Aaron's C++ random distributions](https://github.com/LTLA/aarand)
+
+
+## CPP Turbomodules with Expo
 1) Make sure Turbomodule folder exists
 2) Run `npm install ./RTNAarand`. This will added RTNAarand as a dependency in your app's package.json like `"rtn-aarand": "file:./RTNAarand"`. The name "rtn-aarand" comes from the name field in the `RTNAarand/package.json` file.
 3) Codegen script: from your main app's root directory (outside RTNAarand), where your app's package.json is located, run: `node node_modules/react-native/scripts/generate-codegen-artifacts.js --targetPlatform ios --path ./ --outputPath ./RTNAarand/generated/`. Note, for codegen to find your RTNAarand module, it needs to be registered as a dependency in your app's package.json which we did with the `npm install ./RTNAarand` command.
